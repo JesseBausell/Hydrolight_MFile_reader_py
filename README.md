@@ -1,2 +1,6 @@
 # Hydrolight_MFile_reader_py
 This python notebook reformats a series of Hydrolight-generated m-files (radiative transfer outputs) into hdf5 files. This enables easier access to data for investigators, who can work with structured variables inside the hdf5 files rather than unweildy ascii files, which are difficult to utilize on a large scale. See GitHub readme for more details.
+
+The primary purpose of Hydrolight_MFile_reader_py is to convert so called "m-files", ascii files output by Hydrolight (radiative transfer completing computer software) into structure hdf5 files, allowing for more seemless data analyses using a coding language (e.g. matlab, python, R, etc.). The program can convert multiple m-files into hdf5 files. It also selects sevaral values (chosen by me) from m-files/hdf5 files and publishes them in a csv file (rows = filename, columns = variable). These selected variables (listed below) are conducive to my personal research needs. However, I have provided detailed annotation of my code which are intended to allow a user to make alterations to the original script if he/she wants to change the variables output to the csv file. 
+
+The author (yours truly) assumes that Hydrolight_MFile_reader_py will re-format m-files generated with the help of 
