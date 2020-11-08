@@ -40,11 +40,11 @@ def hdf5_fileWRITER(filE_NAME,HE53_dict):
             # for-loop disects the m-file dictionary and writes data and dictionary elements
             # into a hdf5 file.
             k1 = k.replace('/','-') # replace the forward slash with a hyphen
-            hf.create_group(k) # Create a key/element in hdf5 file based on nested python dictionary
+            hf.create_group(k1) # Create a key/element in hdf5 file based on nested python dictionary
             for l in HE53_dict[k]:
                 # Within the python dictionary, take all elements (keys and data) and incorporate them 
                 # into hdf5 file
-                hf[k][l] = HE53_dict[k][l] # Create new nested element with data in hdf5 file
+                hf[k1][l] = HE53_dict[k][l] # Create new nested element with data in hdf5 file
 
 
 def ASCII_to_hdf5(fileNAME_mfile):
