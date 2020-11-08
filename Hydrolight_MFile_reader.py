@@ -39,6 +39,7 @@ def hdf5_fileWRITER(filE_NAME,HE53_dict):
         for k in HE53_dict:
             # for-loop disects the m-file dictionary and writes data and dictionary elements
             # into a hdf5 file.
+            k1 = k.replace('/','-') # replace the forward slash with a hyphen
             hf.create_group(k) # Create a key/element in hdf5 file based on nested python dictionary
             for l in HE53_dict[k]:
                 # Within the python dictionary, take all elements (keys and data) and incorporate them 
